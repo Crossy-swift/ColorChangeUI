@@ -42,6 +42,9 @@ extension ColorTF {
                         showAllert.toggle()
                     }
                     newColor = currentNumber
+                } else  if !$0.isEmpty {
+                    newColor = 0
+                    showAllert.toggle()
                 }
             }
         )
